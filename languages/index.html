@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Hello world!</h1>
+        <p id="text">Max, de nieuwsgierige hond, ontdekte op een dag een geheime tuin vol kleurrijke bloemen. Terwijl hij speelde, vond hij een oude sleutel die naar een verborgen schat leidde.</p>
+        <img src="https://picsum.photos/300/300" alt="een afbeelding">
+    </div>
+</body>
+<script>
+
+    const title = document.getElementById("title");
+    const text = document.getElementById("text");
+
+    if(document.documentElement.lang == "en"){
+        title.innerText = "Hello world in english";
+        text.innerText = "Max, the curious dog, discovered a secret garden full of colorful flowers one day. While playing, he found an old key that led to a hidden treasure.";
+        
+    }
+    if(document.documentElement.lang == "fr"){
+        title.innerText = "Bonjour tout le monde en anglais";
+        text.innerText = "Max, le chien curieux, découvrit un jour un jardin secret rempli de fleurs colorées. En jouant, il trouva une vieille clé menant à un trésor caché.";
+    }
+</script>
+<script>
+
+</script>
+</html>
